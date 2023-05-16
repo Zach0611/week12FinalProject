@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f2f2ff;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-4">Workout Tracker</h1>
+
+        <div class="mt-4">
+            <ul id="workout-items" class="list-group">
+                <!-- Workout items will be added here -->
+            </ul>
+        </div>
+
+        <form id="workout-form" class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Workout Name:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description:</label>
+                <textarea id="description" class="form-control" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="duration" class="form-label">Duration (minutes):</label>
+                <input type="number" id="duration" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="intensity" class="form-label">Intensity Level:</label>
+                <select id="intensity" class="form-select" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Workout</button>
+        </form>
+    </div>
+
+    <script src="week12Final.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
